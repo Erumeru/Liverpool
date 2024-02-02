@@ -6,58 +6,62 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/rosa"
-        app:layout_constraintTop_toTopOf="parent"
-        android:orientation="horizontal"
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/rosa"
+           app:layout_constraintTop_toTopOf="parent"
+           android:orientation="horizontal"
 
-        >
+           >
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/SearchBar"
-            android:layout_width="match_parent"
+           <androidx.appcompat.widget.Toolbar
+               android:id="@+id/SearchBar"
+               android:layout_width="match_parent"
 
-            android:layout_height="42dp"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="@color/white"
-            app:navigationIcon="@drawable/search_bar">
+               android:layout_height="42dp"
+               android:layout_margin="10dp"
+               android:layout_weight="1"
+               android:background="@color/white"
+               app:navigationIcon="@drawable/search_bar">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center_vertical"
+                   >
 
-                >
+                   <EditText
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:hint="Buscar por producto, marca y más..."
+                       android:lines="1"
+                       android:maxLines="1"
+                       android:textSize="13sp"
+                       android:textColor="@color/gris"
+                       android:background="@null" />
+                   <Button
+                       android:id="@+id/buttonBarCode"
+                       android:layout_width="26dp"
+                       android:layout_centerVertical="true"
+                       android:layout_height="26dp"
+                       android:layout_alignParentEnd="true"
+                       android:layout_marginEnd="10dp"
+                       android:background="@drawable/barcode" />
 
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:hint="Buscar por producto, marca y más..."
-                    android:lines="1"
-                    android:maxLines="1"
-                    android:textSize="13sp"
-                    android:textColor="@color/gris"
-                    android:background="@null" />
-                <Button
-                    android:id="@+id/buttonBarCode"
-                    android:layout_width="26dp"
-                    android:layout_centerVertical="true"
-                    android:layout_height="26dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="10dp"
-                    android:background="@drawable/barcode" />
-
-            </RelativeLayout>
-        </androidx.appcompat.widget.Toolbar>
-        <Button
-            android:id="@+id/buttonBag"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_margin="15dp"
-            android:background="@drawable/bag"/>
-    </LinearLayout>
+               </RelativeLayout>
+           </androidx.appcompat.widget.Toolbar>
+           <Button
+               android:id="@+id/buttonBag"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_margin="15dp"
+               android:background="@drawable/bag"/>
+       </LinearLayout>
+   </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
