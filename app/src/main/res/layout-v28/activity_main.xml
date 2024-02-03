@@ -119,8 +119,239 @@
                         android:src="@drawable/descuento"
                         app:layout_constraintBottom_toTopOf="@id/btnEsperar"
                         app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintDimensionRatio="1:1"
                         app:layout_constraintTop_toTopOf="parent" />
 
+
+
+                    <TextView
+                        android:id="@+id/prodsVistos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="15dp"
+                        android:text="Productos vistos recientemente"
+                        android:textSize="22dp"
+                        app:layout_constraintStart_toStartOf="@id/imgGrande"
+                        app:layout_constraintTop_toBottomOf="@id/imgGrande"
+
+                        />
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/prodsVistos"
+                        app:layout_constraintStart_toStartOf="@id/prodsVistos">
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="none">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toBottomOf="@id/prodsVistos"
+                                app:layout_constraintStart_toStartOf="@id/prodsVistos"
+                                android:orientation="horizontal"
+                                android:paddingTop="20dp"
+                                >
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/lavadora"
+                                        android:layout_width="180dp"
+                                        android:layout_height="180dp"
+                                        android:layout_marginTop="8dp"
+                                        android:src="@drawable/lavadora"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintBottom_toTopOf="@id/textLavadora"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+
+                                        app:layout_constraintDimensionRatio="1:1"
+                                        app:layout_constraintVertical_bias="0.5"
+                                        app:layout_constraintHorizontal_bias="0.5"/>
+                                    <TextView
+                                        android:paddingTop="10dp"
+                                        android:id="@+id/textLavadora"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:layout_constraintTop_toBottomOf="@id/lavadora"
+                                        android:text="Lavasecadora Hisense \nelectrónica 15kg WDQT1514"
+                                        android:lines="2"
+                                        android:maxLines="2"
+                                        />
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@id/textLavadora">
+                                        <TextView
+                                            android:paddingTop="10dp"
+                                            android:id="@+id/textDescuento"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            app:layout_constraintTop_toBottomOf="@id/textLavadora"
+                                            android:text=" ̶$̶1̶2̶,̶9̶9̶9̶"
+                                            android:textColor="@color/gris"
+                                            android:textSize="10dp"
+                                            android:lines="2"
+                                            android:maxLines="2"
+                                            />
+                                        <TextView
+                                            android:paddingTop="10dp"
+                                            android:id="@+id/textPrecio"
+                                            android:paddingLeft="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            app:layout_constraintTop_toBottomOf="@id/textLavadora"
+                                            android:text="$10,000"
+                                            android:textColor="@color/rojo"
+                                            android:textSize="12dp"
+                                            android:textStyle="bold"
+                                            android:lines="2"
+                                            android:maxLines="2"
+                                            />
+                                    </LinearLayout>
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/aspiradora"
+                                        android:layout_width="180dp"
+                                        android:layout_height="180dp"
+                                        android:layout_marginTop="8dp"
+                                        android:src="@drawable/aspiradora"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintBottom_toTopOf="@id/textAspiradora"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+
+                                        app:layout_constraintDimensionRatio="1:1"
+                                        app:layout_constraintVertical_bias="0.5"
+                                        app:layout_constraintHorizontal_bias="0.5"/>
+                                    <TextView
+                                        android:paddingTop="10dp"
+                                        android:id="@+id/textAspiradora"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:layout_constraintTop_toBottomOf="@id/aspiradora"
+                                        android:text="Aspiradora ciclónica Dyson V8\nAbsolute 447266-01"
+                                        android:lines="2"
+                                        android:maxLines="2"
+                                        />
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@id/textAspiradora">
+                                        <TextView
+                                            android:paddingTop="10dp"
+                                            android:id="@+id/textDescuentoAspi"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            app:layout_constraintTop_toBottomOf="@id/textLavadora"
+                                            android:text=" ̶$̶4̶,̶9̶9̶9̶"
+                                            android:textColor="@color/gris"
+                                            android:textSize="10dp"
+                                            android:lines="2"
+                                            android:maxLines="2"
+                                            />
+                                        <TextView
+                                            android:paddingTop="10dp"
+                                            android:id="@+id/textPrecioAspi"
+                                            android:paddingLeft="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            app:layout_constraintTop_toBottomOf="@id/textAspiradora"
+                                            android:text="$3,500"
+                                            android:textColor="@color/rojo"
+                                            android:textSize="12dp"
+                                            android:textStyle="bold"
+                                            android:lines="2"
+                                            android:maxLines="2"
+                                            />
+                                    </LinearLayout>
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/tenis"
+                                        android:layout_width="180dp"
+                                        android:layout_height="180dp"
+                                        android:layout_marginTop="8dp"
+                                        android:src="@drawable/tenis"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintBottom_toTopOf="@id/textTenis"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+
+                                        app:layout_constraintDimensionRatio="1:1"
+                                        app:layout_constraintVertical_bias="0.5"
+                                        app:layout_constraintHorizontal_bias="0.5"/>
+                                    <TextView
+                                        android:paddingTop="10dp"
+                                        android:id="@+id/textTenis"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:layout_constraintTop_toBottomOf="@id/tenis"
+                                        android:text="Tenis Salomon Predict Hike Mid\nGore-Tex de mujer para correr"
+                                        android:lines="2"
+                                        android:maxLines="2"
+                                        />
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@id/textTenis">
+                                        <TextView
+                                            android:paddingTop="10dp"
+                                            android:id="@+id/textDescuentoTeni"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            app:layout_constraintTop_toBottomOf="@id/textLavadora"
+                                            android:text="̶$̶1̶,̶6̶0̶0̶"
+                                            android:textColor="@color/gris"
+                                            android:textSize="10dp"
+                                            android:lines="2"
+                                            android:maxLines="2"
+                                            />
+                                        <TextView
+                                            android:paddingTop="10dp"
+                                            android:id="@+id/textPrecioTeni"
+                                            android:paddingLeft="5dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            app:layout_constraintTop_toBottomOf="@id/textAspiradora"
+                                            android:text="$999"
+                                            android:textColor="@color/rojo"
+                                            android:textSize="12dp"
+                                            android:textStyle="bold"
+                                            android:lines="2"
+                                            android:maxLines="2"
+                                            />
+                                    </LinearLayout>
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </ScrollView>
                     <Button
                         android:id="@+id/btnEsperar"
                         android:layout_width="wrap_content"
@@ -138,19 +369,6 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="15dp"
-                        android:text="Productos vistos recientemente"
-                        android:textSize="22dp"
-                        app:layout_constraintStart_toStartOf="@id/imgGrande"
-                        app:layout_constraintTop_toBottomOf="@id/imgGrande"
-
-                        />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </FrameLayout>
