@@ -64,6 +64,7 @@
         android:layout_height="wrap_content"
         android:background="@android:color/white"
         android:orientation="horizontal"
+        android:gravity="center"
         >
         <Button
             android:layout_width="25dp"
