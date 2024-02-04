@@ -2,6 +2,9 @@ package com.example.liverpool
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,5 +13,9 @@ class MainActivity : AppCompatActivity() {
 
         val toolbar=findViewById<androidx.appcompat.widget.Toolbar>(R.id.SearchBar)
         toolbar.setBackgroundResource(R.drawable.toolbar_rounded)
+
+
+
+
     }
 }

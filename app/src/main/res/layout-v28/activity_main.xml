@@ -76,6 +76,7 @@
                 android:layout_height="25dp"
                 android:layout_margin="12dp"
                 android:background="@drawable/location"
+                android:tint="@android:color/white"
                 android:padding="10dp" />
 
             <EditText
@@ -94,6 +95,7 @@
                 android:layout_height="25dp"
                 android:layout_margin="15dp"
                 android:background="@drawable/keyboard_arrow_right"
+                android:tint="@android:color/black"
                 android:padding="8dp" />
         </LinearLayout>
 
@@ -137,23 +139,26 @@
                         app:layout_constraintTop_toBottomOf="@id/imgGrande"
 
                         />
+
                     <ScrollView
+                        android:id="@+id/scrollView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:layout_constraintTop_toBottomOf="@id/prodsVistos"
-                        app:layout_constraintStart_toStartOf="@id/prodsVistos">
+                        app:layout_constraintStart_toStartOf="@id/prodsVistos"
+                        app:layout_constraintTop_toBottomOf="@id/prodsVistos">
+
                         <HorizontalScrollView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:scrollbars="none">
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                app:layout_constraintTop_toBottomOf="@id/prodsVistos"
-                                app:layout_constraintStart_toStartOf="@id/prodsVistos"
                                 android:orientation="horizontal"
                                 android:paddingTop="20dp"
-                                >
+                                app:layout_constraintStart_toStartOf="@id/prodsVistos"
+                                app:layout_constraintTop_toBottomOf="@id/prodsVistos">
 
                                 <androidx.constraintlayout.widget.ConstraintLayout
                                     android:layout_width="wrap_content"
@@ -166,56 +171,57 @@
                                         android:layout_height="180dp"
                                         android:layout_marginTop="8dp"
                                         android:src="@drawable/lavadora"
-                                        app:layout_constraintTop_toTopOf="parent"
                                         app:layout_constraintBottom_toTopOf="@id/textLavadora"
-                                        app:layout_constraintStart_toStartOf="parent"
-                                        app:layout_constraintEnd_toEndOf="parent"
-
                                         app:layout_constraintDimensionRatio="1:1"
-                                        app:layout_constraintVertical_bias="0.5"
-                                        app:layout_constraintHorizontal_bias="0.5"/>
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintHorizontal_bias="0.5"
+
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintVertical_bias="0.5" />
+
                                     <TextView
-                                        android:paddingTop="10dp"
                                         android:id="@+id/textLavadora"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        app:layout_constraintTop_toBottomOf="@id/lavadora"
-                                        android:text="Lavasecadora Hisense \nelectrónica 15kg WDQT1514"
                                         android:lines="2"
                                         android:maxLines="2"
-                                        />
+                                        android:paddingTop="10dp"
+                                        android:text="Lavasecadora Hisense \nelectrónica 15kg WDQT1514"
+                                        app:layout_constraintTop_toBottomOf="@id/lavadora" />
+
                                     <LinearLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:orientation="horizontal"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toBottomOf="@id/textLavadora">
+
                                         <TextView
-                                            android:paddingTop="10dp"
                                             android:id="@+id/textDescuento"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            app:layout_constraintTop_toBottomOf="@id/textLavadora"
+                                            android:lines="2"
+                                            android:maxLines="2"
+                                            android:paddingTop="10dp"
                                             android:text=" ̶$̶1̶2̶,̶9̶9̶9̶"
                                             android:textColor="@color/gris"
                                             android:textSize="10dp"
-                                            android:lines="2"
-                                            android:maxLines="2"
-                                            />
+                                            app:layout_constraintTop_toBottomOf="@id/textLavadora" />
+
                                         <TextView
-                                            android:paddingTop="10dp"
                                             android:id="@+id/textPrecio"
-                                            android:paddingLeft="5dp"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            app:layout_constraintTop_toBottomOf="@id/textLavadora"
+                                            android:lines="2"
+                                            android:maxLines="2"
+                                            android:paddingLeft="5dp"
+                                            android:paddingTop="10dp"
                                             android:text="$10,000"
                                             android:textColor="@color/rojo"
                                             android:textSize="12dp"
                                             android:textStyle="bold"
-                                            android:lines="2"
-                                            android:maxLines="2"
-                                            />
+                                            app:layout_constraintTop_toBottomOf="@id/textLavadora" />
                                     </LinearLayout>
                                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -231,56 +237,57 @@
                                         android:layout_height="180dp"
                                         android:layout_marginTop="8dp"
                                         android:src="@drawable/aspiradora"
-                                        app:layout_constraintTop_toTopOf="parent"
                                         app:layout_constraintBottom_toTopOf="@id/textAspiradora"
-                                        app:layout_constraintStart_toStartOf="parent"
-                                        app:layout_constraintEnd_toEndOf="parent"
-
                                         app:layout_constraintDimensionRatio="1:1"
-                                        app:layout_constraintVertical_bias="0.5"
-                                        app:layout_constraintHorizontal_bias="0.5"/>
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintHorizontal_bias="0.5"
+
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintVertical_bias="0.5" />
+
                                     <TextView
-                                        android:paddingTop="10dp"
                                         android:id="@+id/textAspiradora"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        app:layout_constraintTop_toBottomOf="@id/aspiradora"
-                                        android:text="Aspiradora ciclónica Dyson V8\nAbsolute 447266-01"
                                         android:lines="2"
                                         android:maxLines="2"
-                                        />
+                                        android:paddingTop="10dp"
+                                        android:text="Aspiradora ciclónica Dyson V8\nAbsolute 447266-01"
+                                        app:layout_constraintTop_toBottomOf="@id/aspiradora" />
+
                                     <LinearLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:orientation="horizontal"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toBottomOf="@id/textAspiradora">
+
                                         <TextView
-                                            android:paddingTop="10dp"
                                             android:id="@+id/textDescuentoAspi"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            app:layout_constraintTop_toBottomOf="@id/textLavadora"
+                                            android:lines="2"
+                                            android:maxLines="2"
+                                            android:paddingTop="10dp"
                                             android:text=" ̶$̶4̶,̶9̶9̶9̶"
                                             android:textColor="@color/gris"
                                             android:textSize="10dp"
-                                            android:lines="2"
-                                            android:maxLines="2"
-                                            />
+                                            app:layout_constraintTop_toBottomOf="@id/textLavadora" />
+
                                         <TextView
-                                            android:paddingTop="10dp"
                                             android:id="@+id/textPrecioAspi"
-                                            android:paddingLeft="5dp"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            app:layout_constraintTop_toBottomOf="@id/textAspiradora"
+                                            android:lines="2"
+                                            android:maxLines="2"
+                                            android:paddingLeft="5dp"
+                                            android:paddingTop="10dp"
                                             android:text="$3,500"
                                             android:textColor="@color/rojo"
                                             android:textSize="12dp"
                                             android:textStyle="bold"
-                                            android:lines="2"
-                                            android:maxLines="2"
-                                            />
+                                            app:layout_constraintTop_toBottomOf="@id/textAspiradora" />
                                     </LinearLayout>
                                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -297,61 +304,63 @@
                                         android:layout_height="180dp"
                                         android:layout_marginTop="8dp"
                                         android:src="@drawable/tenis"
-                                        app:layout_constraintTop_toTopOf="parent"
                                         app:layout_constraintBottom_toTopOf="@id/textTenis"
-                                        app:layout_constraintStart_toStartOf="parent"
-                                        app:layout_constraintEnd_toEndOf="parent"
-
                                         app:layout_constraintDimensionRatio="1:1"
-                                        app:layout_constraintVertical_bias="0.5"
-                                        app:layout_constraintHorizontal_bias="0.5"/>
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintHorizontal_bias="0.5"
+
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintVertical_bias="0.5" />
+
                                     <TextView
-                                        android:paddingTop="10dp"
                                         android:id="@+id/textTenis"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        app:layout_constraintTop_toBottomOf="@id/tenis"
-                                        android:text="Tenis Salomon Predict Hike Mid\nGore-Tex de mujer para correr"
                                         android:lines="2"
                                         android:maxLines="2"
-                                        />
+                                        android:paddingTop="10dp"
+                                        android:text="Tenis Salomon Predict Hike Mid\nGore-Tex de mujer para correr"
+                                        app:layout_constraintTop_toBottomOf="@id/tenis" />
+
                                     <LinearLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:orientation="horizontal"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintTop_toBottomOf="@id/textTenis">
+
                                         <TextView
-                                            android:paddingTop="10dp"
                                             android:id="@+id/textDescuentoTeni"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            app:layout_constraintTop_toBottomOf="@id/textLavadora"
+                                            android:lines="2"
+                                            android:maxLines="2"
+                                            android:paddingTop="10dp"
                                             android:text="̶$̶1̶,̶6̶0̶0̶"
                                             android:textColor="@color/gris"
                                             android:textSize="10dp"
-                                            android:lines="2"
-                                            android:maxLines="2"
-                                            />
+                                            app:layout_constraintTop_toBottomOf="@id/textLavadora" />
+
                                         <TextView
-                                            android:paddingTop="10dp"
                                             android:id="@+id/textPrecioTeni"
-                                            android:paddingLeft="5dp"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            app:layout_constraintTop_toBottomOf="@id/textAspiradora"
+                                            android:lines="2"
+                                            android:maxLines="2"
+                                            android:paddingLeft="5dp"
+                                            android:paddingTop="10dp"
                                             android:text="$999"
                                             android:textColor="@color/rojo"
                                             android:textSize="12dp"
                                             android:textStyle="bold"
-                                            android:lines="2"
-                                            android:maxLines="2"
-                                            />
+                                            app:layout_constraintTop_toBottomOf="@id/textAspiradora" />
                                     </LinearLayout>
                                 </androidx.constraintlayout.widget.ConstraintLayout>
                             </LinearLayout>
                         </HorizontalScrollView>
                     </ScrollView>
+
                     <Button
                         android:id="@+id/btnEsperar"
                         android:layout_width="wrap_content"
@@ -368,14 +377,156 @@
                         android:textSize="10dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.499" />
+
+                    <LinearLayout
+                        android:id="@+id/navigationBarLayout"
+                        android:layout_width="585dp"
+                        android:layout_height="139dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+                        app:layout_constraintVertical_bias="0.36">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/home" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/categories" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/creditcard" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/servicios" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/user" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Inicio"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Categorías"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Mi crédito"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Servicios"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Mi cuenta"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </FrameLayout>
 
         </LinearLayout>
 
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
