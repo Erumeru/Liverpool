@@ -385,6 +385,7 @@
                             android:paddingStart="10dp"
                             android:paddingTop="20dp"
                             android:paddingEnd="10dp"
+                            android:textColor="@color/white"
                             android:rotation="90"
                             android:text="Te esperamos"
                             android:textSize="10dp"
@@ -421,6 +422,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
+
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="5">
@@ -496,6 +498,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:orientation="horizontal"
+
             android:weightSum="5">
 
             <TextView

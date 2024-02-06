@@ -14,8 +14,5 @@ class MainActivity : AppCompatActivity() {
         val toolbar=findViewById<androidx.appcompat.widget.Toolbar>(R.id.SearchBar)
         toolbar.setBackgroundResource(R.drawable.toolbar_rounded)
 
-
-
-
     }
 }
